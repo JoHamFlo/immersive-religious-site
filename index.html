@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Path of Submission</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Naskh+Arabic:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Immersive Religious Engagement Exhibit</p>
+        <h1>The Path of Submission</h1>
+        <p class="hero-copy">A hosted interactive exhibit centered on Tawhid, the 99 Names of Allah, and thoughtful Christian comparison for deeper understanding at Indiana Wesleyan University.</p>
+        <div class="hero-actions">
+          <a href="#gallery" class="btn btn-primary">Explore the Gallery</a>
+          <a href="#dialogue" class="btn btn-secondary">Enter the Dialogue</a>
+        </div>
+      </div>
+      <div class="hero-cards">
+        <article class="card">
+          <h3>The Mission</h3>
+          <p>Move from media-driven stereotypes to authentic understanding through theology, beauty, and respectful encounter.</p>
+        </article>
+        <article class="card">
+          <h3>The Ummah</h3>
+          <p>Highlight the global Muslim community and the unity of believers under the oneness of God.</p>
+        </article>
+        <article class="card wide">
+          <h3>Core Theme</h3>
+          <p>Islam is presented not as an abstraction, but as a lived tradition shaped by reverence, worship, beauty, and total submission to God.</p>
+        </article>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">The Gallery</p>
+            <h2>The 99 Names of Allah</h2>
+            <p>Click any name to open a theological comparison panel with Islamic meaning, a Christian parallel, and why that comparison matters for the exhibit.</p>
+          </div>
+          <div class="controls">
+            <div class="note">Use the toggle to focus on names with stronger Christian parallels.</div>
+            <button id="toggleShared" class="btn btn-primary" type="button">Show Shared Only</button>
+          </div>
+        </div>
+        <div id="nameGrid" class="name-grid"></div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container media-grid">
+        <article class="panel">
+          <h2>Mosque Experience</h2>
+          <p>Use media to create atmosphere and help visitors feel the sacred rhythm of Islamic life rather than only reading about it.</p>
+          <div class="media-stack">
+            <div class="media-card">
+              <div class="media-placeholder">Adhan Video Placeholder</div>
+              <h3>Adhan (Call to Prayer)</h3>
+              <p>Swap this box for an embedded video or uploaded clip.</p>
+            </div>
+            <div class="media-card">
+              <div class="media-placeholder">Ramadan Video Placeholder</div>
+              <h3>Ramadan Journey</h3>
+              <p>Add a fasting reflection, meal footage, or narration here.</p>
+            </div>
+          </div>
+        </article>
+        <article id="dialogue" class="panel">
+          <h2>Dialogue &amp; Q&amp;A</h2>
+          <p>Transform the site from a static exhibit into a participatory bridge-building experience.</p>
+          <div class="media-card">
+            <div class="media-placeholder">Imam Q&amp;A Placeholder</div>
+            <h3>Imam Q&amp;A</h3>
+            <p>Embed a recorded interview, short answers, or a guided FAQ here.</p>
+          </div>
+          <div class="prompt-box">
+            <h3>Wise Response Prompts</h3>
+            <p>Encourage respectful questions, shared values, and careful comparison rather than stereotype or defensiveness.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="modalBackdrop" class="modal-backdrop hidden" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button id="closeModal" class="close-btn" aria-label="Close">×</button>
+      <div class="modal-top">
+        <div>
+          <div id="modalArabic" class="modal-arabic"></div>
+          <h3 id="modalTitle"></h3>
+          <p id="modalTranslit" class="muted"></p>
+        </div>
+        <div id="modalBadge" class="badge"></div>
+      </div>
+      <div class="modal-grid">
+        <article class="modal-card">
+          <p class="eyebrow">Islamic Meaning</p>
+          <p id="modalIslamic"></p>
+        </article>
+        <article class="modal-card">
+          <p class="eyebrow">Christian Parallel</p>
+          <p id="modalChristian"></p>
+        </article>
+        <article class="modal-card">
+          <p class="eyebrow">Why It Matters</p>
+          <p id="modalExhibit"></p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
