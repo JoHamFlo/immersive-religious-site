@@ -131,7 +131,9 @@ const christianNames = [
 ];
 
 const misconceptions = [
-{title:'Muslims are terrorists or support violence',body:'Islam is described in the draft as a religion of peace and mercy that does not condone terrorism. Murder is treated as a major sin.',quote:'Qur’an 60:8 and 5:32 are used to emphasize kindness, justice, and the seriousness of taking innocent life.'},
+{title:'Muslims are terrorists or support violence',body:'Islam is a religion of peace and mercy and does not condone terrorism in any form. According to the Qur’an and the Sunnah, murder is a major sin in Islam. 
+“God does not forbid you from showing kindness and dealing justly with those 	who have not fought you about religion and have not driven you out of your 	homes.  God loves just dealers.” (Quran 60:8) 
+“Whoever kills a soul unless for a soul or for corruption [done] in the land – 	it is as if he had slain mankind entirely.” (Quran 5:32).'},
 {title:'Muslim women are oppressed',body:'The draft distinguishes Islamic teaching from cultural practices that may mistreat women. It notes that Islam historically promoted women’s rights in areas such as financial rights, divorce, and protection from infanticide.',quote:'Qur’an 4:19 and 2:228 are used to emphasize kindness, equity, and rights for women.'},
 {title:'Islam was spread only by the sword',body:'The draft explains that Islam also spread through trade and peaceful missionary work, especially in places such as Indonesia and sub-Saharan Africa.',quote:'Qur’an 2:256: “There shall be no compulsion in religion.”'},
 {title:'All Muslims are Arabs',body:'Only a portion of Muslims worldwide are Arabs. Large Muslim populations live in Indonesia, Pakistan, India, and Bangladesh.',quote:'Islam is presented as a universal religion with diverse ethnic and cultural communities.'},
