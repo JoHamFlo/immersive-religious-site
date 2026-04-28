@@ -179,3 +179,25 @@ body::before{
   color: var(--purple);
   border-bottom: 1px solid var(--purple);
 }
+.qr-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.qr-label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--gold);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.qr-code {
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  background: white;
+  border-radius: 12px;
+  border: 2px solid var(--gold);
+  box-shadow: var(--shadow);
+}
