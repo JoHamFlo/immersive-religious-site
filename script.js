@@ -10,7 +10,7 @@ const islamicNames = [
 {n:9,arabic:'ٱلْجَبَّارُ',name:'Al-Jabbar',meaning:'The All-Compelling',theology:'Nothing happens in His domain except what He wills.',connection:'',tags:['power']},
 {n:10,arabic:'ٱلْمُتَكَبِّرُ',name:'Al-Mutakabbir',meaning:'The Dominant One',theology:'He is unlike creation and free from created attributes.',connection:'',tags:['power']},
 {n:11,arabic:'ٱلْخَالِقُ',name:'Al-Khaliq',meaning:'The Creator',theology:'He brings everything from non-existence into existence.',connection:'Jehovah Elohim; Jehovah-Bara — Genesis 2:4; Isaiah 40:28',tags:['power','shared']},
-{n:12,arabic:'ٱلْبَ��رِئُ',name:'Al-Bari',meaning:'The Maker',theology:'The Creator with power to shape and bring entities forth.',connection:'',tags:['power']},
+{n:12,arabic:'ٱلْبَرِئُ',name:'Al-Bari',meaning:'The Maker',theology:'The Creator with power to shape and bring entities forth.',connection:'',tags:['power']},
 {n:13,arabic:'ٱلْمُصَوِّرُ',name:'Al-Musawwir',meaning:'The Flawless Shaper',theology:'He forms His creatures in different forms and pictures.',connection:'',tags:['power']},
 {n:14,arabic:'ٱلْغَفَّارُ',name:'Al-Ghaffar',meaning:'The Great Forgiver',theology:'He forgives sins again and again.',connection:'',tags:['mercy']},
 {n:15,arabic:'ٱلْقَهَّارُ',name:'Al-Qahhar',meaning:'The All-Prevailing One',theology:'Dominant, perfectly powerful, and unable to be overcome.',connection:'',tags:['power']},
