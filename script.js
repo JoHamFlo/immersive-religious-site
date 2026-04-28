@@ -10,7 +10,7 @@ const islamicNames = [
 {n:9,arabic:'ٱلْجَبَّارُ',name:'Al-Jabbar',meaning:'The All-Compelling',theology:'Nothing happens in His domain except what He wills.',connection:'',tags:['power']},
 {n:10,arabic:'ٱلْمُتَكَبِّرُ',name:'Al-Mutakabbir',meaning:'The Dominant One',theology:'He is unlike creation and free from created attributes.',connection:'',tags:['power']},
 {n:11,arabic:'ٱلْخَالِقُ',name:'Al-Khaliq',meaning:'The Creator',theology:'He brings everything from non-existence into existence.',connection:'Jehovah Elohim; Jehovah-Bara — Genesis 2:4; Isaiah 40:28',tags:['power','shared']},
-{n:12,arabic:'ٱلْبَرِئُ',name:'Al-Bari',meaning:'The Maker',theology:'The Creator with power to shape and bring entities forth.',connection:'',tags:['power']},
+{n:12,arabic:'ٱلْبَ��رِئُ',name:'Al-Bari',meaning:'The Maker',theology:'The Creator with power to shape and bring entities forth.',connection:'',tags:['power']},
 {n:13,arabic:'ٱلْمُصَوِّرُ',name:'Al-Musawwir',meaning:'The Flawless Shaper',theology:'He forms His creatures in different forms and pictures.',connection:'',tags:['power']},
 {n:14,arabic:'ٱلْغَفَّارُ',name:'Al-Ghaffar',meaning:'The Great Forgiver',theology:'He forgives sins again and again.',connection:'',tags:['mercy']},
 {n:15,arabic:'ٱلْقَهَّارُ',name:'Al-Qahhar',meaning:'The All-Prevailing One',theology:'Dominant, perfectly powerful, and unable to be overcome.',connection:'',tags:['power']},
@@ -197,15 +197,15 @@ function renderVerseList(text){
 }
 
 const misconceptions = [
-{title:'Muslims are terrorists or support violence',body:'Islam is a religion of peace and mercy that does not condone terrorism. Murder is treated as a major sin in Islamic teaching.',
-{title:'Muslim women are oppressed',body:'This section distinguishes Islamic teaching from cultural practices that may mistreat women. It notes that Islam historically promoted women\'s rights including property ownership, divorce rights, and inheritance.',
-{title:'Islam was spread only by the sword',body:'This section explains that Islam also spread through trade and peaceful missionary work, especially in places such as Indonesia and sub-Saharan Africa where peaceful conversion was common.',
-{title:'All Muslims are Arabs',body:'Only a portion of Muslims worldwide are Arabs. Large Muslim populations live in Indonesia, Pakistan, India, and Bangladesh.',
-{title:'Islam is intolerant of other religions',body:'This section explains that Islam recognizes Jews and Christians as "People of the Book" and acknowledges shared Abrahamic heritage.',
-{title:'Jihad only means holy war',body:'This section explains that jihad can mean struggle in the path of God and often refers to internal spiritual struggle.',
-{title:'Muslims do not respect Jesus',body:'Islam honors Jesus, or Isa, as a highly respected prophet, affirms his miraculous birth, and identifies him as Messiah.',
-{title:'Sharia law is only barbaric',body:'This section defines Sharia as a moral and legal framework connected to prayer, fasting, charity, justice, and daily life. Its application varies and is influenced by culture and interpretation.',
-{title:'Islam is anti-science',body:'This section points to the Golden Age of Islam, when Muslim scholars contributed to medicine, mathematics, astronomy, and philosophy.',
+{title:'Muslims are terrorists or support violence',body:'Islam is a religion of peace and mercy that does not condone terrorism. Murder is treated as a major sin in Islamic teaching.',quote:'Qur\'an 5:32 — Whoever kills a soul unless for a soul or for corruption done in the land — it is as if he had slain mankind entirely.'},
+{title:'Muslim women are oppressed',body:'This section distinguishes Islamic teaching from cultural practices that may mistreat women. It notes that Islam historically promoted women\'s rights including property ownership, divorce rights, and inheritance.',quote:'Qur\'an 4:19 — O you who believe! You are forbidden to inherit women against their will.'},
+{title:'Islam was spread only by the sword',body:'This section explains that Islam also spread through trade and peaceful missionary work, especially in places such as Indonesia and sub-Saharan Africa where peaceful conversion was common.',quote:'Historical evidence shows diverse methods of Islamic expansion including commerce and cultural influence.'},
+{title:'All Muslims are Arabs',body:'Only a portion of Muslims worldwide are Arabs. Large Muslim populations live in Indonesia, Pakistan, India, and Bangladesh.',quote:'Islam is presented as a universal religion transcending ethnicity and geography.'},
+{title:'Islam is intolerant of other religions',body:'This section explains that Islam recognizes Jews and Christians as "People of the Book" and acknowledges shared Abrahamic heritage.',quote:'Qur\'an 29:46 — And do not argue with the People of the Scripture except in a way that is best.'},
+{title:'Jihad only means holy war',body:'This section explains that jihad can mean struggle in the path of God and often refers to internal spiritual struggle.',quote:'Qur\'an 22:78 describes striving and effort as part of faith; the greater jihad refers to inner spiritual struggle.'},
+{title:'Muslims do not respect Jesus',body:'Islam honors Jesus, or Isa, as a highly respected prophet, affirms his miraculous birth, and identifies him as Messiah.',quote:'Qur\'an 19:30 shows Jesus affirming his servitude to Allah and his role as prophet.'},
+{title:'Sharia law is only barbaric',body:'This section defines Sharia as a moral and legal framework connected to prayer, fasting, charity, justice, and daily life. Its application varies and is influenced by culture and interpretation.',quote:'Sharia encompasses ethical guidance, family law, commerce, and principles of justice.'},
+{title:'Islam is anti-science',body:'This section points to the Golden Age of Islam, when Muslim scholars contributed to medicine, mathematics, astronomy, and philosophy.',quote:'Qur\'an 39:9 values knowledge — Say, "Are those who know equal to those who do not know?"'}
 ];
 
 const quizQuestions = [
