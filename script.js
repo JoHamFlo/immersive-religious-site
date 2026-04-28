@@ -383,10 +383,22 @@ document.querySelector('#restartQuiz').addEventListener('click', () => {
   document.querySelector('#restartQuiz').classList.add('hidden');
   renderQuiz();
 });
-document.querySelector('.nav-toggle').addEventListener('click', e => {
-  const links = document.querySelector('.nav-links');
-  links.classList.toggle('show');
-  e.currentTarget.setAttribute('aria-expanded', links.classList.contains('show'));
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+function closeNavigation(){
+  navLinks.classList.remove('show');
+  navToggle.setAttribute('aria-expanded', 'false');
+}
+navToggle.addEventListener('click', e => {
+  const isOpen = navLinks.classList.toggle('show');
+  e.currentTarget.setAttribute('aria-expanded', String(isOpen));
+});
+navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', closeNavigation));
+document.addEventListener('click', event => {
+  if(!event.target.closest('.nav')) closeNavigation();
+});
+document.addEventListener('keydown', event => {
+  if(event.key === 'Escape') closeNavigation();
 });
 closeModalButton.addEventListener('click', closeModal);
 modal.addEventListener('click', event => { if(event.target === modal) closeModal(); });
@@ -397,3 +409,17 @@ renderIslamicNames();
 renderChristianNames();
 renderMisconceptions();
 renderQuiz();
+// Extra mobile navigation behavior: close after selection, outside click, or Escape.
+const stickyNavToggle = document.querySelector('.nav-toggle');
+const stickyNavLinks = document.querySelector('.nav-links');
+function closeStickyNavigation(){
+  stickyNavLinks.classList.remove('show');
+  stickyNavToggle.setAttribute('aria-expanded', 'false');
+}
+stickyNavLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', closeStickyNavigation));
+document.addEventListener('click', event => {
+  if(!event.target.closest('.nav')) closeStickyNavigation();
+});
+document.addEventListener('keydown', event => {
+  if(event.key === 'Escape') closeStickyNavigation();
+});
