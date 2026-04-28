@@ -204,15 +204,15 @@ function renderVerseList(text){
 }
 
 const misconceptions = [
-{title:'Muslims are terrorists or support violence',body:'Islam is a religion of peace and mercy that does not condone terrorism. Murder is treated as a major sin in Islamic teaching.',quote:'References: Qur\'an 60:8; Qur\'an 5:32.'},
-{title:'Muslim women are oppressed',body:'This section distinguishes Islamic teaching from cultural practices that may mistreat women. It notes that Islam historically promoted women\'s rights including property ownership, divorce rights, and inheritance.',quote:'References: Qur\'an 4:19; Qur\'an 2:228.'},
-{title:'Islam was spread only by the sword',body:'This section explains that Islam also spread through trade and peaceful missionary work, especially in places such as Indonesia and sub-Saharan Africa where peaceful conversion was common.',quote:'Reference: Qur\'an 2:256.'},
-{title:'All Muslims are Arabs',body:'Only a portion of Muslims worldwide are Arabs. Large Muslim populations live in Indonesia, Pakistan, India, and Bangladesh.',quote:'Islam is presented as a universal religion transcending ethnicity and geography.'},
-{title:'Islam is intolerant of other religions',body:'This section explains that Islam recognizes Jews and Christians as "People of the Book" and acknowledges shared Abrahamic heritage.',quote:'References: Qur\'an 2:62; Qur\'an 5:5; Qur\'an 29:46.'},
-{title:'Jihad only means holy war',body:'This section explains that jihad can mean struggle in the path of God and often refers to internal spiritual struggle.',quote:'Reference: Qur\'an 22:78.'},
-{title:'Muslims do not respect Jesus',body:'Islam honors Jesus, or Isa, as a highly respected prophet, affirms his miraculous birth, and identifies him as Messiah.',quote:'Reference: Qur\'an 19:30.'},
-{title:'Sharia law is only barbaric',body:'This section defines Sharia as a moral and legal framework connected to prayer, fasting, charity, justice, and daily life. Its application varies and is influenced by culture and interpretation.',quote:'Sharia encompasses ethical guidance, family law, commerce, and principles of justice.'},
-{title:'Islam is anti-science',body:'This section points to the Golden Age of Islam, when Muslim scholars contributed to medicine, mathematics, astronomy, and philosophy.',quote:'Reference: Qur\'an 39:9.'}
+{title:'Muslims are terrorists or support violence',body:'Islam is a religion of peace and mercy and does not condone terrorism in any form. According to the Qur’an and the Sunnah, murder is a major sin in Islam.',quote:'References: Qur\'an 60:8; Qur\'an 5:32.'},
+{title:'Muslim women are oppressed',body:'While the Qur’an emphasizes the well-being and rights of women, certain cultural traditions have led to discrimination. The Qur’an explicitly warns against mistreating women.',quote:'References: Qur\'an 4:19; Qur\'an 2:228.'},
+{title:'Islam was spread only by the sword',body:'Islam did not spread solely through military conquest. In many regions—such as Indonesia and sub-Saharan Africa—it spread primarily through trade and peaceful missionary efforts.',quote:'Reference: Qur\'an 2:256.'},
+{title:'All Muslims are Arabs',body:'Only about 20% of Muslims worldwide are Arab. The largest Muslim populations are in countries like Indonesia, Pakistan, India, and Bangladesh. Islam is a universal religion with followers from diverse ethnic and cultural backgrounds.'},
+{title:'Islam is intolerant of other religions',body:'Islam recognizes and respects other Abrahamic faiths. The Qur’an refers to Jews and Christians as “People of the Book”.',quote:'References: Qur\'an 2:62; Qur\'an 5:5; Qur\'an 29:46.'},
+{title:'Jihad only means holy war',body:'While jihad can refer to struggle in defense, its primary meaning is an internal, spiritual struggle to live righteously.',quote:'Reference: Qur\'an 22:78.'},
+{title:'Muslims do not respect Jesus',body:'In Islam, Jesus Christ (Isa) is a highly respected prophet. Muslims believe in his miraculous birth and his role as the Messiah.',quote:'Reference: Qur\'an 19:30.'},
+{title:'Sharia law is only barbaric',body:'Sharia (meaning “path”) is a moral and legal framework guiding many aspects of a Muslim’s life, including prayer, charity, fasting, and justice. Its interpretation and application vary widely and are often misrepresented.',quote:'Sharia encompasses ethical guidance, family law, commerce, and principles of justice.'},
+{title:'Islam is anti-science',body:'Historically, during the Islamic Golden Age, Muslim scholars made major contributions to medicine, mathematics, astronomy, and philosophy.',quote:'Reference: Qur\'an 39:9.'}
 ];
 
 const quizQuestions = [
