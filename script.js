@@ -151,7 +151,7 @@ const verseTexts = {
   'Jeremiah 23:6': 'Jeremiah 23:6 — In his days Judah shall be saved, and Israel shall dwell safely: and this is his name whereby he shall be called, THE LORD OUR RIGHTEOUSNESS.',
   'Psalm 27:1': 'Psalm 27:1 — The LORD is my light and my salvation; whom shall I fear? the LORD is the strength of my life; of whom shall I be afraid?',
   'Exodus 17:15': 'Exodus 17:15 — And Moses built an altar, and called the name of it Jehovah-nissi.',
-  'Exodus 15:26': 'Exodus 15:26 — And said, If thou wilt diligently hearken to the voice of the LORD thy God, and wilt do that which is right in his sight, and wilt give ear to his commandments, and keep all his statutes, I will put none of these diseases upon thee, which I have brought upon the Egyptians.',
+  'Exodus 15:26': 'Exodus 15:26 — And said, If thou wilt diligently hearken to the voice of the LORD thy God, and wilt do that which is right in his sight, and wilt give ear to his commandments, and keep all his statutes, I will put none of these diseases upon thee, which I have brought upon the Egyptians: for I am the LORD that healeth thee.',
   'Psalm 23:1': 'Psalm 23:1 — The LORD is my shepherd; I shall not want.',
   'Leviticus 20:8': 'Leviticus 20:8 — And ye shall keep my statutes, and do them: I am the LORD which sanctify you.',
   'Exodus 31:13': 'Exodus 31:13 — Speak thou also unto the children of Israel, saying, Verily my sabbaths ye shall keep: for it is a sign between me and you throughout your generations; that ye may know that I am the LORD that doth sanctify you.',
@@ -168,24 +168,31 @@ const verseTexts = {
   'Psalm 91:9': 'Psalm 91:9 — Because thou hast made the LORD, which is my refuge, even the most High, thy habitation.',
   'Jeremiah 16:19': 'Jeremiah 16:19 — O LORD, my strength, and my fortress, and my refuge in the day of affliction, the Gentiles shall come unto thee from the ends of the earth, and shall say, Surely our fathers have inherited lies, vanity, and things wherein there is no profit.',
   'Ezekiel 7:9': 'Ezekiel 7:9 — And mine eye shall not spare, neither will I have pity: I will recompense thee according to thy ways and thine abominations that are in the midst of thee; and ye shall know that I am the LORD that smiteth.',
-  'Quran 60:8': 'Qur\'an 60:8 — Allah does not forbid you from dealing kindly and fairly with those who have neither fought nor driven you out of your homes. Surely Allah loves those who are fair.',
-  'Quran 5:32': 'Qur\'an 5:32 — Whoever kills a soul unless for a soul or for corruption done in the land — it is as if he had slain mankind entirely.',
-  'Quran 4:19': 'Qur\'an 4:19 — O you who believe! You are forbidden to inherit women against their will. Nor should you treat them with harshness, that you may take away part of the dowry you have given them, unless they commit a clear indecency.',
-  'Quran 2:228': 'Qur\'an 2:228 — Women have rights similar to those of men equitably, although men have a degree of responsibility above them. And Allah is Almighty, All-Wise.',
-  'Quran 2:256': 'Qur\'an 2:256 — There shall be no compulsion in religion.',
-  'Quran 5:5': 'Qur\'an 5:5 — Today all good, pure foods have been made lawful for you. Similarly, the food of the People of the Book is permissible for you and yours is permissible for them.',
-  'Quran 29:46': 'Qur\'an 29:46 — And do not argue with the People of the Scripture except in a way that is best, except for those who commit injustice among them, and say, "We believe in that which has been revealed to us and revealed to you; and our God and your God is one; and we are Muslims [submitting] to Him."',
-  'Quran 22:78': 'Qur\'an 22:78 — And strive for Allah with the striving due to Him. He has chosen you and has not placed upon you in the religion any difficulty. It is the religion of your father, Abraham.',
-  'Quran 19:30': 'Qur\'an 19:30 — Jesus said, "Indeed, I am the servant of Allah. He has given me the Scripture and made me a prophet."',
-  'Quran 39:9': 'Qur\'an 39:9 — Say, "Are those who know equal to those who do not know?" None will be mindful of this except people of reason.'
+  'Quran 60:8': 'Qur\'an 60:8 — Allah forbiddeth you not those who warred not against you on account of religion and drove you not out from your homes, that ye should show them kindness and deal justly with them. Lo! Allah loveth the just dealers.',
+  'Quran 5:32': 'Qur\'an 5:32 — For that cause We decreed for the Children of Israel that whosoever killeth a human being for other than manslaughter or corruption in the earth, it shall be as if he had killed all mankind, and whoso saveth the life of one, it shall be as if he had saved the life of all mankind. Our messengers came unto them of old with clear proofs, but afterwards lo! many of them became prodigals in the earth.',
+  'Quran 4:19': 'Qur\'an 4:19 — O ye who believe! It is not lawful for you forcibly to inherit the women, nor that ye should put constraint upon them that ye may take away a part of that which ye have given them, unless they be guilty of flagrant lewdness. But consort with them in kindness, for if ye hate them it may happen that ye hate a thing wherein Allah hath placed much good.',
+  'Quran 2:228': 'Qur\'an 2:228 — Women who are divorced shall wait, keeping themselves apart, three monthly courses. And it is not lawful for them that they should conceal that which Allah hath created in their wombs if they are believers in Allah and the Last Day. And their husbands would do better to take them back in that case if they desire a reconciliation. And they have rights similar to those over them in kindness, and men are a degree above them. Allah is Mighty, Wise.',
+  'Quran 2:256': 'Qur\'an 2:256 — There is no compulsion in religion. The right direction is henceforth distinct from error. And he who rejecteth false deities and believeth in Allah hath grasped a firm handhold which will never break. Allah is Hearer, Knower.',
+  'Quran 2:62': 'Qur\'an 2:62 — Lo! Those who believe, and those who are Jews, and Christians, and Sabaeans — whoever believeth in Allah and the Last Day and doeth right — surely their reward is with their Lord, and there shall no fear come upon them neither shall they grieve.',
+  'Quran 5:5': 'Qur\'an 5:5 — This day are all good things made lawful for you. The food of those who have received the Scripture is lawful for you, and your food is lawful for them. And so are the virtuous women of the believers and the virtuous women of those who received the Scripture before you when ye give them their marriage portions and live with them in honor, not in fornication, nor taking them as secret concubines. Whoso denieth the faith, his work is vain and he will be among the losers in the Hereafter.',
+  'Quran 29:46': 'Qur\'an 29:46 — And argue not with the People of the Scripture unless it be in a way that is better, save with such of them as do wrong; and say: We believe in that which hath been revealed unto us and revealed unto you; our God and your God is One, and unto Him we surrender.',
+  'Quran 22:78': 'Qur\'an 22:78 — And strive for Allah with the endeavor which is His right. He hath chosen you and hath not laid upon you in religion any hardship; the faith of your father Abraham is yours. He hath named you Muslims of old time and in this Scripture, that the messenger may be a witness against you, and that ye may be witnesses against mankind. So establish worship, pay the poor-due, and hold fast to Allah. He is your Protecting Friend. A blessed Patron and a blessed Helper!',
+  'Quran 19:30': 'Qur\'an 19:30 — He spake: Lo! I am the slave of Allah. He hath given me the Scripture and hath appointed me a Prophet.',
+  'Quran 39:9': 'Qur\'an 39:9 — Is he who payeth adoration in the watches of the night, prostrate and standing, bewaring of the Hereafter and hoping for the mercy of his Lord, to be accounted equal with a disbeliever? Say: Are those who know equal with those who know not? But only men of understanding will pay heed.'
 };
 
 function collectVerses(text){
-  const normalized = String(text || '').replace(/Qur'an/g, 'Quran');
+  const original = String(text || '');
+  const normalized = original
+    .replace(/Qur[’']an/g, 'Quran')
+    .replace(/Surah Al-Baqarah\s*/g, 'Quran ')
+    .replace(/Surah Al-Maidah\s*/g, 'Quran ')
+    .replace(/Surah Al-Ankabut\s*/g, 'Quran ');
   const refs = [];
   Object.keys(verseTexts).forEach(ref => {
     const alt = ref.replace('Psalm', 'Psa').replace('Genesis', 'Gen').replace('Judges', 'Judg').replace('Deuteronomy', 'Deut').replace('Exodus', 'Ex').replace('Isaiah', 'Isa').replace('Jeremiah', 'Jer').replace('Leviticus', 'Lev').replace('1 Samuel', '1 Sam').replace('Ezekiel', 'Ezek').replace('Joshua', 'Josh').replace('Mark', 'Mk').replace('Quran', 'Qur\'an');
-    if(normalized.includes(ref) || normalized.includes(alt)) refs.push(verseTexts[ref]);
+    const curlyAlt = alt.replace("Qur'an", 'Qur’an');
+    if(normalized.includes(ref) || normalized.includes(alt) || original.includes(curlyAlt)) refs.push(verseTexts[ref]);
   });
   return [...new Set(refs)];
 }
@@ -193,19 +200,19 @@ function collectVerses(text){
 function renderVerseList(text){
   const verses = collectVerses(text);
   if(!verses.length) return '';
-  return '<section class="deep-section verses"><h3>Full Verse Text</h3>' + verses.map(v => '<p>' + v + '</p>').join('') + '</section>';
+  return '<section class="deep-section verses"><h3>Full Verse Quote Box</h3>' + verses.map(v => '<blockquote class="verse-quote">' + v + '</blockquote>').join('') + '</section>';
 }
 
 const misconceptions = [
-{title:'Muslims are terrorists or support violence',body:'Islam is a religion of peace and mercy that does not condone terrorism. Murder is treated as a major sin in Islamic teaching.',quote:'Qur\'an 5:32 — Whoever kills a soul unless for a soul or for corruption done in the land — it is as if he had slain mankind entirely.'},
-{title:'Muslim women are oppressed',body:'This section distinguishes Islamic teaching from cultural practices that may mistreat women. It notes that Islam historically promoted women\'s rights including property ownership, divorce rights, and inheritance.',quote:'Qur\'an 4:19 — O you who believe! You are forbidden to inherit women against their will.'},
-{title:'Islam was spread only by the sword',body:'This section explains that Islam also spread through trade and peaceful missionary work, especially in places such as Indonesia and sub-Saharan Africa where peaceful conversion was common.',quote:'Historical evidence shows diverse methods of Islamic expansion including commerce and cultural influence.'},
+{title:'Muslims are terrorists or support violence',body:'Islam is a religion of peace and mercy that does not condone terrorism. Murder is treated as a major sin in Islamic teaching.',quote:'References: Qur\'an 60:8; Qur\'an 5:32.'},
+{title:'Muslim women are oppressed',body:'This section distinguishes Islamic teaching from cultural practices that may mistreat women. It notes that Islam historically promoted women\'s rights including property ownership, divorce rights, and inheritance.',quote:'References: Qur\'an 4:19; Qur\'an 2:228.'},
+{title:'Islam was spread only by the sword',body:'This section explains that Islam also spread through trade and peaceful missionary work, especially in places such as Indonesia and sub-Saharan Africa where peaceful conversion was common.',quote:'Reference: Qur\'an 2:256.'},
 {title:'All Muslims are Arabs',body:'Only a portion of Muslims worldwide are Arabs. Large Muslim populations live in Indonesia, Pakistan, India, and Bangladesh.',quote:'Islam is presented as a universal religion transcending ethnicity and geography.'},
-{title:'Islam is intolerant of other religions',body:'This section explains that Islam recognizes Jews and Christians as "People of the Book" and acknowledges shared Abrahamic heritage.',quote:'Qur\'an 29:46 — And do not argue with the People of the Scripture except in a way that is best.'},
-{title:'Jihad only means holy war',body:'This section explains that jihad can mean struggle in the path of God and often refers to internal spiritual struggle.',quote:'Qur\'an 22:78 describes striving and effort as part of faith; the greater jihad refers to inner spiritual struggle.'},
-{title:'Muslims do not respect Jesus',body:'Islam honors Jesus, or Isa, as a highly respected prophet, affirms his miraculous birth, and identifies him as Messiah.',quote:'Qur\'an 19:30 shows Jesus affirming his servitude to Allah and his role as prophet.'},
+{title:'Islam is intolerant of other religions',body:'This section explains that Islam recognizes Jews and Christians as "People of the Book" and acknowledges shared Abrahamic heritage.',quote:'References: Qur\'an 2:62; Qur\'an 5:5; Qur\'an 29:46.'},
+{title:'Jihad only means holy war',body:'This section explains that jihad can mean struggle in the path of God and often refers to internal spiritual struggle.',quote:'Reference: Qur\'an 22:78.'},
+{title:'Muslims do not respect Jesus',body:'Islam honors Jesus, or Isa, as a highly respected prophet, affirms his miraculous birth, and identifies him as Messiah.',quote:'Reference: Qur\'an 19:30.'},
 {title:'Sharia law is only barbaric',body:'This section defines Sharia as a moral and legal framework connected to prayer, fasting, charity, justice, and daily life. Its application varies and is influenced by culture and interpretation.',quote:'Sharia encompasses ethical guidance, family law, commerce, and principles of justice.'},
-{title:'Islam is anti-science',body:'This section points to the Golden Age of Islam, when Muslim scholars contributed to medicine, mathematics, astronomy, and philosophy.',quote:'Qur\'an 39:9 values knowledge — Say, "Are those who know equal to those who do not know?"'}
+{title:'Islam is anti-science',body:'This section points to the Golden Age of Islam, when Muslim scholars contributed to medicine, mathematics, astronomy, and philosophy.',quote:'Reference: Qur\'an 39:9.'}
 ];
 
 const quizQuestions = [
