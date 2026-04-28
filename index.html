@@ -56,7 +56,7 @@
       <div class="section-heading">
         <p class="eyebrow purple">Islamic names</p>
         <h2>The 99 Names of Allah</h2>
-        <p>Click any card to open its definition from the project document, including Christian connections where the document identified one.</p>
+        <p>Each card includes Arabic script, pronunciation, English meaning, theological meaning, and connections to Christian names.</p>
       </div>
       <div class="tools">
         <input id="searchNames" type="search" placeholder="Search by Arabic, pronunciation, meaning, or connection..." />
@@ -75,7 +75,7 @@
       <div class="section-heading">
         <p class="eyebrow">Media literacy</p>
         <h2>Misconceptions About Islam</h2>
-        <p>These cards use the Islam misconceptions text from the project document.</p>
+        <p>These cards correct common stereotypes using concise explanations and quoted Qur'an references.</p>
       </div>
       <div class="accordion" id="misconceptionsList"></div>
     </section>
@@ -84,7 +84,7 @@
       <div class="section-heading">
         <p class="eyebrow orange">Christian names</p>
         <h2>Unique Christian Names for God</h2>
-        <p>Click any card to open the definition or reference from the project document.</p>
+        <p>These names emphasize themes such as presence, healing, protection, deliverance, lordship, and covenant relationship.</p>
       </div>
       <div class="name-grid christian-grid" id="christianNamesGrid"></div>
     </section>
@@ -122,22 +122,24 @@
       <div class="credits-card">
         <p><strong>Website creators:</strong> Jonathan, Chenoa, and Josiah.</p>
         <p><strong>Research:</strong> Chenoa Simmonds.</p>
-        <p><strong>Source topics:</strong> The 99 Names of Allah, names of God in the Bible and Qur’an, names of Jehovah, and common misconceptions about Islam.</p>
+        <p><strong>Source topics:</strong> The 99 Names of Allah, names of God in the Bible and Qur'an, names of Jehovah, and common misconceptions about Islam.</p>
       </div>
     </section>
   </main>
 
+  <!-- MODAL FOR THEOLOGY DEFINITIONS -->
+  <div id="theologyModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-overlay">
+      <div class="modal-inner">
+        <button id="closeTheologyModal" aria-label="Close definition">✕</button>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
     <a href="#top">Back to top ↑</a>
   </footer>
-
-
-  <div class="modal-overlay" id="theologyModal" aria-hidden="true">
-    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close" id="closeTheologyModal" aria-label="Close theology panel">&times;</button>
-      <div id="modalContent"></div>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>
