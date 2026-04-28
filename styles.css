@@ -179,19 +179,139 @@ body::before{
   color: var(--emerald);
   border-bottom: 1px solid var(--emerald);
 }
+
+/* Integrated QR exhibit badge */
+.qr-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+  position: relative;
+  z-index: 2;
+}
+
+.qr-badge {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  width: min(230px, 100%);
+  padding: 18px 18px 16px;
+  background:
+    linear-gradient(rgba(11,63,50,.92), rgba(11,63,50,.92)),
+    radial-gradient(circle at 50% 0%, rgba(201,154,46,.28), transparent 62%);
+  border: 2px solid rgba(201,154,46,.88);
+  border-radius: 24px;
+  box-shadow: 0 22px 45px rgba(0,0,0,.24);
+  overflow: hidden;
+}
+
+.qr-badge::before,
+.qr-badge::after {
+  content: "";
+  position: absolute;
+  inset: 9px;
+  border: 1px solid rgba(255,244,215,.36);
+  border-radius: 18px;
+  pointer-events: none;
+}
+
+.qr-badge::after {
+  inset: 15px;
+  border-style: dashed;
+  opacity: .55;
+}
+
+.qr-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: .16;
+  background-image:
+    linear-gradient(45deg, transparent 46%, var(--gold) 47%, var(--gold) 53%, transparent 54%),
+    linear-gradient(-45deg, transparent 46%, var(--gold) 47%, var(--gold) 53%, transparent 54%);
+  background-size: 28px 28px;
+  pointer-events: none;
+}
+
+.qr-label {
+  position: relative;
+  margin: 0;
+  font-size: 11px;
+  color: var(--gold-soft);
+  font-weight: 900;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.qr-frame {
+  position: relative;
+  padding: 10px;
+  background: #fffdf5;
+  border: 3px double var(--gold);
+  border-radius: 18px;
+  box-shadow: inset 0 0 0 4px rgba(15,95,70,.08), 0 10px 22px rgba(0,0,0,.2);
+}
+
+.qr-frame::before,
+.qr-frame::after {
+  content: "✦";
+  position: absolute;
+  color: var(--gold);
+  font-size: 12px;
+  background: var(--emerald-2);
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  border: 1px solid var(--gold);
+}
+
+.qr-frame::before { top: -11px; left: -11px; }
+.qr-frame::after { right: -11px; bottom: -11px; }
+
 .qr-code {
-  width: 110px;
-  height: 110px;
-  padding: 8px;
-  background: white;
-  border-radius: 12px;
-  border: 2px solid var(--gold);
-  box-shadow: var(--shadow);
+  display: block;
+  width: 118px;
+  height: 118px;
+  border-radius: 10px;
+  transition: transform .2s ease;
+}
+
+.qr-caption {
+  position: relative;
+  margin: 0;
+  color: rgba(255,255,255,.78);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.qr-badge:hover .qr-code {
+  transform: scale(1.035);
+}
+
+@media (min-width: 980px) {
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 230px;
+    grid-template-areas:
+      "eyebrow qr"
+      "title qr"
+      "text qr"
+      "actions qr";
+    column-gap: 34px;
+    align-items: center;
+    text-align: left;
+  }
+
+  .hero .eyebrow { grid-area: eyebrow; }
+  .hero h1 { grid-area: title; }
+  .hero-text { grid-area: text; margin-left: 0; margin-right: 0; }
+  .hero-actions { grid-area: actions; justify-content: flex-start; }
+  .qr-container { grid-area: qr; margin-top: 0; justify-content: flex-end; }
 }
 
 @media (max-width: 768px) {
-  .qr-container {
-    position: static;
-    margin-top: 20px;
-  }
+  .qr-container { margin-top: 24px; }
+  .qr-badge { width: min(210px, 92vw); padding: 16px; }
+  .qr-code { width: 104px; height: 104px; }
 }

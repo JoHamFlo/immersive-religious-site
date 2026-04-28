@@ -31,10 +31,16 @@
         <a class="btn primary" href="#quiz">Start the quiz</a>
         <a class="btn secondary" href="#names">Explore the names</a> 
       </div>
-      <div class="qr-container">
-  <p class="qr-label">Scan to Explore</p>
-  <img src="qr-code.png" alt="QR code to access website" class="qr-code">
-</div>
+      <div class="qr-container" aria-label="QR code to open this website">
+        <div class="qr-badge">
+          <div class="qr-pattern" aria-hidden="true"></div>
+          <p class="qr-label">Scan to Explore</p>
+          <div class="qr-frame">
+            <img src="qr-code.png" alt="QR code to access website" class="qr-code">
+          </div>
+          <p class="qr-caption">Open the Exhibit</p>
+        </div>
+      </div>
     </section>
   </header>
 
